@@ -19,11 +19,7 @@
 
 LaTex公式编辑器：https://www.latexlive.com
 
-AirPortal：https://airportal.cn/
-
 docsify官网：https://docsify.js.org/#/zh-cn/
-
-leetcode：https://leetcode-cn.com/
 
 JS算法操作：https://share.mubu.com/doc/7Gqqv94z5hp
 
@@ -81,14 +77,6 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
  [C语言实现二叉树](docs/数据结构与算法/C语言实现二叉树.md) 
 
-## 刷题记录
-
- [剑指offer刷题记录](docs/数据结构与算法/剑指offer刷题记录.md) 
-
- [Leetcode刷题记录](docs/数据结构与算法/Leetcode刷题记录.md) 
-
- [leetcode周赛](docs/数据结构与算法/leetcode周赛.md) 
-
 # 数据库
 
  [SQL语法速记](docs/数据库/SQL语法速记.md) 
@@ -98,8 +86,6 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
  [Redis学习记录](docs/数据库/Redis学习记录.md) 
 
  [数据库练习题](docs/数据库/数据库练习题.md) 
-
- [在阿里云服务CentOS8上安装Mysql8](docs/数据库/在阿里云服务CentOS8上安装Mysql8.md) 
 
 # 计算机网络
 
@@ -116,12 +102,6 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 ## Linux
 
  [Linux学习记录](docs/Linux/Linux学习记录.md) 
-
- [ArchLinux折腾记录](docs/Linux/ArchLinux折腾记录.md) 
-
- [manjaro-i3配置](docs/Linux/manjaro-i3配置.md) 
-
- [Manjaro折腾记录](docs/Linux/Manjaro折腾记录.md) 
 
 # 前端
 
@@ -147,7 +127,9 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
 ## NodeJS
 
- [nodeJS学习记录](docs/前端/nodeJS学习记录.md) 
+ [NodeJS学习笔记（新）](docs/前端/NodeJS学习笔记.md) 
+
+ [nodeJS学习记录（旧）](docs/前端/nodeJS学习记录.md) 
 
  [在React中使用mockjs](docs/前端/在React中使用mockjs.md) 
 
@@ -229,10 +211,6 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
  [JVM系列](docs/JVM/JVM系列.md) 
 
-## 编码规范
-
- [Alibaba编码规范部分摘录](docs/Java/Alibaba编码规范部分摘录.md) 
-
 ## JavaWeb
 
  [JavaWeb学习记录](docs/Java/JavaWeb学习记录.md) 
@@ -259,8 +237,6 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
  [Spring注解总结](docs/SSM/Spring注解总结.md) 
 
- [《从0开始深入学习Spring》](docs/SSM/《从0开始深入学习Spring》.md) 
-
 ### SpringMVC
 
  [SpringMVC学习记录](docs/SSM/SpringMVC学习记录.md) 
@@ -275,17 +251,11 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
  [SpringBoot学习记录](docs/SSM/SpringBoot学习记录.md) 
 
- [SpringBoot-WebMvcConfigurer](docs/SSM/SpringBoot-WebMvcConfigurer.md) 
-
 ## SpringCloud
 
  [SpringCloud学习记录](docs/SSM/SpringCloud学习记录.md) 
 
  [SpringCloud-Alibaba学习记录](docs/SSM/SpringCloud-Alibaba学习记录.md) 
-
-## 项目分析
-
- [eladmin项目分析（后端）](docs/SSM/eladmin项目分析（后端）.md) 
 
 # Matlab
 
@@ -314,10 +284,6 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
  [在Win10家庭版中安装docker](docs/工具配置/在Win10家庭版中安装docker.md) 
 
  [git部署到码云和github，同时提交到两个仓库](docs/工具配置/git部署到码云和github，同时提交到两个仓库.md) 
-
- [制作属于自己的Hexo博客](docs/Hexo/制作属于自己的Hexo博客.md) 
-
- [Hexo-Tag](docs/Hexo/Hexo-Tag.md) 
 
 # 设计模式
 
