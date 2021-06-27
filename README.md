@@ -43,6 +43,78 @@ labuladong的算法小抄：https://labuladong.gitee.io/algo/
 
 CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
+# 前端
+
+## 深入理解
+
+ [JS中一些区别讨论](docs/前端/JS中一些区别讨论.md) 
+
+ [深入理解JS事件循环机制](docs/前端/深入理解JS事件循环机制.md) 
+
+## 技巧使用
+
+ [Promise的使用](docs/前端/Promise的使用.md) 
+
+ [在React中使用mockjs](docs/前端/在React中使用mockjs.md) 
+
+ [常见前后端交互用法解释](docs/前端/常见前后端交互用法解释.md) 
+
+## 前端面试之道
+
+ [前端页面实例积累](docs/前端/前端页面实例积累.md) 
+
+## 学习记录汇总
+
+ [HTML标签总结](docs/前端/HTML标签总结.md) 
+
+ [HTML5](docs/前端/HTML5.md) 
+
+---
+
+ [CSS总结](docs/前端/CSS总结.md) 
+
+ [秋招准备-CSS](docs/前端/秋招准备-CSS.md) 
+
+---
+
+ [《现代JavaScript教程》学习记录-编程语言(上)](docs/前端/《现代JavaScript教程》学习记录-编程语言(上).md) 
+
+ [《现代JavaScript教程》学习记录-编程语言(下)](docs/前端/《现代JavaScript教程》学习记录-编程语言(下).md) 
+
+ [《现代JavaScript教程》学习记录-浏览器](docs/前端/《现代JavaScript教程》学习记录-浏览器.md) 
+
+ [nodeJS学习记录（旧）](docs/前端/nodeJS学习记录.md) 
+
+---
+
+ [React学习记录](docs/前端/React学习记录.md) 
+
+ [redux学习记录.md](docs/前端/redux学习记录.md) 
+
+ [react-router学习记录.md](docs/前端/react-router学习记录.md) 
+
+---
+
+ [Vue基础开发](docs/前端/Vue基础开发.md) 
+
+ [Vue路由](docs/前端/Vue路由.md) 
+
+ [Vue组件开发](docs/前端/Vue组件开发.md) 
+
+ [Vue前端工程化](docs/前端/Vue前端工程化.md) 
+
+ [Vuex](docs/前端/Vuex.md)
+
+ [Vue之前后端交互](docs/前端/Vue之前后端交互.md) 
+
+---
+
+ [webpack学习记录](docs/前端/webpack学习记录.md) 
+
+---
+
+ [Ajax学习记录](docs/前端/Ajax学习记录.md) 
+
 # 数据结构与算法
 
 ## 数据结构基础
@@ -103,70 +175,6 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
  [Linux学习记录](docs/Linux/Linux学习记录.md) 
 
-# 前端
-
-## 祖传三大件
-
- [HTML标签总结](docs/前端/HTML标签总结.md) 
-
- [HTML5](docs/前端/HTML5.md) 
-
- [CSS总结](docs/前端/CSS总结.md) 
-
- [秋招准备-CSS](docs/前端/秋招准备-CSS.md) 
-
- [《现代JavaScript教程》学习记录-编程语言(上)](docs/前端/《现代JavaScript教程》学习记录-编程语言(上).md) 
-
- [《现代JavaScript教程》学习记录-编程语言(下)](docs/前端/《现代JavaScript教程》学习记录-编程语言(下).md) 
-
- [《现代JavaScript教程》学习记录-浏览器](docs/前端/《现代JavaScript教程》学习记录-浏览器.md) 
-
- [JS中一些区别讨论](docs/前端/JS中一些区别讨论.md) 
-
- [Ajax学习记录](docs/前端/Ajax学习记录.md) 
-
-## NodeJS
-
- [NodeJS学习笔记（新）](docs/前端/NodeJS学习笔记.md) 
-
- [nodeJS学习记录（旧）](docs/前端/nodeJS学习记录.md) 
-
- [在React中使用mockjs](docs/前端/在React中使用mockjs.md) 
-
-## 构建工具
-
- [webpack学习记录](docs/前端/webpack学习记录.md) 
-
-## React
-
- [React学习记录](docs/前端/React学习记录.md) 
-
- [redux学习记录.md](docs/前端/redux学习记录.md) 
-
- [react-router学习记录.md](docs/前端/react-router学习记录.md) 
-
- [React Hook](docs/前端/React Hook.md) 
-
-## Vue
-
- [Vue基础开发](docs/前端/Vue基础开发.md) 
-
- [Vue路由](docs/前端/Vue路由.md) 
-
- [Vue组件开发](docs/前端/Vue组件开发.md) 
-
- [Vue前端工程化](docs/前端/Vue前端工程化.md) 
-
- [Vuex](docs/前端/Vuex.md)
-
- [Vue之前后端交互](docs/前端/Vue之前后端交互.md) 
-
- [常见前后端交互用法解释](docs/前端/常见前后端交互用法解释.md) 
-
-## 前端面试之道
-
- [前端页面实例积累](docs/前端/前端页面实例积累.md) 
-
 # Java
 
 ## Java基础及面向对象
@@ -183,23 +191,13 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
  [Java中一些常用的类](docs/Java/Java中一些常用的类.md)
 
-## 集合
-
  [Java容器类](docs/Java/Java容器类.md) 
-
-## IO、NIO
 
  [JavaIO流](docs/Java/JavaIO流.md) 
 
-## 泛型
-
  [Java泛型](docs/Java/Java泛型.md) 
 
-## 反射
-
  [Java注解和反射](docs/Java/Java注解和反射.md) 
-
-## 多线程和并发
 
  [Java多线程和并发](docs/Java/Java多线程和并发.md) 
 
