@@ -15,7 +15,9 @@
 
 > 常用链接
 
-语雀：[https://www.yuque.com/jonnylong](https://www.yuque.com/jonnylong)
+DevDocs API Documentation：https://devdocs.io/
+
+语雀：https://www.yuque.com/jonnylong
 
 LaTex公式编辑器：https://www.latexlive.com
 
@@ -55,6 +57,8 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
  [Promise的使用](docs/前端/Promise的使用.md) 
 
+ [React-Router常见标签及使用](docs/前端/React-Router常见标签及使用.md) 
+
  [在React中使用mockjs](docs/前端/在React中使用mockjs.md) 
 
  [常见前后端交互用法解释](docs/前端/常见前后端交互用法解释.md) 
@@ -82,6 +86,8 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
  [《现代JavaScript教程》学习记录-编程语言(下)](docs/前端/《现代JavaScript教程》学习记录-编程语言(下).md) 
 
  [《现代JavaScript教程》学习记录-浏览器](docs/前端/《现代JavaScript教程》学习记录-浏览器.md) 
+
+ [NodeJS学习笔记（新）](docs/前端/NodeJS学习笔记.md) 
 
  [nodeJS学习记录（旧）](docs/前端/nodeJS学习记录.md) 
 
@@ -114,6 +120,12 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 ---
 
  [Ajax学习记录](docs/前端/Ajax学习记录.md) 
+
+# 招聘准备
+
+ [从输入URL到页面加载的过程](docs/招聘准备/从输入URL到页面加载的过程.md) 
+
+ [秋招必背](docs/招聘准备/秋招必背.md) 
 
 # 数据结构与算法
 
