@@ -45,6 +45,12 @@ labuladong的算法小抄：https://labuladong.gitee.io/algo/
 
 CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
+# 招聘准备
+
+ [从输入URL到页面加载的过程](docs/招聘准备/从输入URL到页面加载的过程.md) 
+
+ [秋招必背](docs/招聘准备/秋招必背.md) 
+
 # 前端
 
 ## 深入理解
@@ -121,12 +127,6 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
  [Ajax学习记录](docs/前端/Ajax学习记录.md) 
 
-# 招聘准备
-
- [从输入URL到页面加载的过程](docs/招聘准备/从输入URL到页面加载的过程.md) 
-
- [秋招必背](docs/招聘准备/秋招必背.md) 
-
 # 数据结构与算法
 
 ## 数据结构基础
@@ -172,6 +172,8 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
  [数据库练习题](docs/数据库/数据库练习题.md) 
 
 # 计算机网络
+
+ [深入理解TCP协议](docs/计算机网络/深入理解TCP协议.md) 
 
  [《计算机网络-自顶向下方法》读书笔记](docs/计算机网络/《计算机网络-自顶向下方法》读书笔记.md) 
 
