@@ -299,7 +299,7 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
 # 设计模式
 
- [Java设计模式](docs/Java/Java设计模式.md) 
+ [Java设计模式](docs/设计模式/Java设计模式.md) 
 
 # C和C++
 
