@@ -259,7 +259,7 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
  [SSM配置文件全解析](docs/SSM/SSM配置文件全解析.md) 
 
-##　SpringBoot
+## SpringBoot
 
  [SpringBoot学习记录](docs/SSM/SpringBoot学习记录.md) 
 
@@ -298,6 +298,8 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
  [git部署到码云和github，同时提交到两个仓库](docs/工具配置/git部署到码云和github，同时提交到两个仓库.md) 
 
 # 设计模式
+
+ [设计模式实验](docs/设计模式/设计模式实验.md) 
 
  [Java设计模式](docs/设计模式/Java设计模式.md) 
 

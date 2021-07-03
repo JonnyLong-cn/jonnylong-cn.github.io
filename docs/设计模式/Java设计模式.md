@@ -1090,6 +1090,192 @@ public void bridgePatternTest(){
 
 # 行为型模式
 
-## 模版模式
-
 ## 观察者模式
+
+被观察的对象：
+
+```java
+public class Subject {
+    private List<Observer> observerList = new LinkedList<>();
+    public void attach(Observer observer){
+        observerList.add(observer);
+    }
+    public void detach(Observer observer){
+        observerList.remove(observer);
+    }
+    public void notifyObserver(){
+        for (Observer o:observerList) {
+            o.update();
+        }
+    }
+}
+```
+
+```java
+public class ConcreteSubject extends Subject {
+    private String subjectState = "aaa";
+    public String getState(){
+        return subjectState;
+    }
+    public void setState(String s){
+        subjectState = s;
+    }
+}
+```
+
+观察者：
+
+```java
+public interface Observer {
+    void update();
+}
+```
+
+```java
+public class ConcreteObserver implements Observer {
+    private int num;
+    private String observerState;
+    private ConcreteSubject subject;
+
+    public ConcreteObserver(ConcreteSubject subject,int num) {
+        this.num = num;
+        this.subject = subject;
+    }
+
+    @Override
+    public void update() {
+        observerState = subject.getState();
+        System.out.println("观察者:"+num+"的状态是"+observerState);
+    }
+
+    public ConcreteSubject getSubject(){
+        return subject;
+    }
+
+    public void setSubject(ConcreteSubject subject) {
+        this.subject = subject;
+    }
+}
+```
+
+客户端测试：
+
+```java
+public class Client {
+    public static void main(String[] args) {
+        ConcreteSubject subject = new ConcreteSubject();
+        subject.attach(new ConcreteObserver(subject,1));
+        subject.attach(new ConcreteObserver(subject,2));
+        subject.attach(new ConcreteObserver(subject,3));
+        subject.setState("ABC");
+        subject.notifyObserver();
+    }
+}
+```
+
+![](Java设计模式/image-20210703101228937.png)
+
+## 中介者模式
+
+同事类：
+
+```java
+public abstract class Colleague {
+    protected Mediator mediator;
+    public Colleague(Mediator mediator){
+        this.mediator=mediator;
+    }
+    public abstract void send(String message);
+    public abstract void notify(String message);
+}
+```
+
+```java
+public class ConcreteColleague1 extends Colleague {
+    public ConcreteColleague1(Mediator mediator) {
+        super(mediator);
+    }
+
+    @Override
+    public void send(String message) {
+        mediator.send(message,this);
+    }
+
+    @Override
+    public void notify(String message) {
+        System.out.println("同事1得到消息:"+message);
+    }
+}
+```
+
+```java
+public class ConcreteColleague2 extends Colleague {
+    public ConcreteColleague2(Mediator mediator) {
+        super(mediator);
+    }
+
+    @Override
+    public void send(String message) {
+        mediator.send(message,this);
+    }
+
+    @Override
+    public void notify(String message) {
+        System.out.println("同事2得到消息:"+message);
+    }
+}
+```
+
+中介者：
+
+```java
+public interface Mediator {
+    void send(String message, Colleague colleague);
+}
+```
+
+```java
+/**
+ * @author Jonny Long
+ * @date 2021/7/3 9:38
+ */
+public class ConcreteMediator implements Mediator {
+    private ConcreteColleague1 col1;
+    private ConcreteColleague2 col2;
+
+    public void setCol1(ConcreteColleague1 col1) {
+        this.col1 = col1;
+    }
+
+    public void setCol2(ConcreteColleague2 col2) {
+        this.col2 = col2;
+    }
+
+    @Override
+    public void send(String message, Colleague colleague) {
+        if (col1.equals(colleague)) {
+            col2.notify(message);
+        } else if (col2.equals(colleague)) {
+            col1.notify(message);
+        }
+    }
+}
+```
+
+客户端测试：
+
+```java
+public class Client {
+    public static void main(String[] args) {
+        ConcreteMediator mediator = new ConcreteMediator();
+        ConcreteColleague1 c1 = new ConcreteColleague1(mediator);
+        ConcreteColleague2 c2 = new ConcreteColleague2(mediator);
+        mediator.setCol1(c1);
+        mediator.setCol2(c2);
+        c1.send("谢谢");
+        c2.send("你好");
+    }
+}
+```
+
+![](Java设计模式/image-20210703102250474.png)
