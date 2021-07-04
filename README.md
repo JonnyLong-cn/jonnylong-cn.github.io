@@ -69,6 +69,12 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
  [常见前后端交互用法解释](docs/前端/常见前后端交互用法解释.md) 
 
+ [CSS选择器使用汇总](docs/前端/CSS选择器使用汇总.md) 
+
+ [flex布局](docs/前端/flex布局.md) 
+
+ [CSS布局实例](docs/前端/CSS布局实例.md) 
+
 ## 前端面试之道
 
  [前端页面实例积累](docs/前端/前端页面实例积累.md) 
@@ -302,6 +308,8 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
  [设计模式实验](docs/设计模式/设计模式实验.md) 
 
  [Java设计模式](docs/设计模式/Java设计模式.md) 
+
+ [软件构造大作业](docs/设计模式/软件构造大作业.md) 
 
 # C和C++
 

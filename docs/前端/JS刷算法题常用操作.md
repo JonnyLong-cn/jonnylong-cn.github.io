@@ -200,11 +200,20 @@ Alice
 *********************/
 ```
 
+## 通过Map的值排序
 
+```js
+let map = new Map();
+map.set('a', 2);
+map.set('b', 10);
+map.set('c', -8);
+map.set('d', 3);
+const list = [...map.keys()];
+list.sort((a, b) => map.get(a) - map.get(b));
+console.log(list);
 
-
-
-
-
-
+/*
+[ 'c', 'a', 'd', 'b' ]
+*/
+```
 

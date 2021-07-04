@@ -145,65 +145,71 @@ setTimeout(function () {
 setTimeout(user.sayHi.bind(user), 1000); 	// Hello,John
 ```
 
-# 数组、类数组对象和可迭代对象
+# 数组、普通对象、类数组对象和可迭代对象
 
-Iterable：如上所述，是实现了 `Symbol.iterator` 方法的对象。
+数组和普通对象就很熟悉了，下面给出另外两个的定义
 
-Array-like：有索引和 `length` 属性的对象，所以它们看起来很像数组。
+类数组对象：
 
-> 所有的可迭代对象都能`for(let … of …)`
+1. 拥有length属性，其他属性为非负整数字符串（因为对象使用[]来取值，会将数值隐式转换为字符串）
+2. 不具有数组具有的方法，即原型链上没有`Array.prototype`
+
+可迭代对象：这个对象的`Symbol.iterator`是个函数，并且有配套的`next()`函数
 
 ```js
-// 可迭代对象
-let range = {
-    from: 1,
-    to: 5,
-    [Symbol.iterator](){
-        return {
-            current: this.from,
-            last: this.to,
-            next() {
-                if (this.current <= this.last) {
-                    return { done: false, value: this.current++ };
-                } else {
-                    return { done: true };
-                }
-            }
-        };
-    }
-};
-// 调用[Symbol.iterator]函数，return的是一个对象
-let iterator = range[Symbol.iterator]();
-while (true) {
-    // 调用返回对象的next()方法，进行手动迭代
-    // 得到的result也是一个对象
-    let result = iterator.next();
-    if (result.done) {
-        break;
-    }
-    // 访问result中的value
-    console.log(result.value);
+// 数组
+let arr = ['hello', 'world'];
+// 对象
+let obj = {
+    0: 'hello',
+    1: 'world',
+    'exam': 'computer'
 }
-```
-
-```js
 // 类数组对象
-let arrayLike = { // 有索引和 length 属性 => 类数组对象
-    0: "Hello",
-    1: "World",
-    length: 2
-};
-
-// Error (no Symbol.iterator)
-for (let item of arrayLike) {}
+let arrLike = {
+    length: 4,
+    0: 'hello',
+    1: 'world',
+    'exam': 'computer',
+    3: 'third'
+}
+// 可迭代对象
+let set = new Set([1, 2, 2, 3, 3, 5, 'hh']);
+// 查看是否可以迭代
+const isIterable = function(obj) {
+    return obj != null && typeof obj[Symbol.iterator] === 'function';
+}
+console.log(isIterable(arr));       // true
+console.log(isIterable(obj));       // false
+console.log(isIterable(arrLike));   // false
+console.log(isIterable(set));       // true
+// 判断是否有length属性
+console.log(arr.length);        // 2
+console.log(obj.length);        // undefined
+console.log(arrLike.length);    // 4
+console.log(set.length);        // undefined
+// 判断是否有size属性
+console.log(arr.size);        // undefined
+console.log(obj.size);        // undefined
+console.log(arrLike.size);    // undefined
+console.log(set.size);        // 5
 ```
 
-可迭代对象和类数组对象通常都 **不是数组**，它们没有 `push` 和 `pop` 等方法。
+| 对象种类   | 是否可迭代 | 是否有length属性 | 是否有size属性 | 原型链             |
+| ---------- | ---------- | ---------------- | -------------- | ------------------ |
+| 数组       | √          | √                | ×              | Array、Object      |
+| 普通对象   | ×          | ×                | ×              | Object             |
+| 类数组对象 | ×          | √                | ×              | Object             |
+| 可迭代对象 | √          | ×                | √              | Set（Map）、Object |
 
-`Array.from(range);`：将类数组对象和可迭代对象转换为数组
+> 原型链上有Array，就说明可以用push、pop、shift、unshift等方法
 
-+ 可迭代对象：调用迭代器将结果装入到一个数组中
-+ 类数组对象：取属性装入到数组
+---
+
+可以用`Array.from()`将类数组对象和可迭代对象转换为数组
+
+- 可迭代对象：调用迭代器将结果装入到一个数组中
+- 类数组对象：取属性装入到数组
 
 ```js
 let arrayLike = {
@@ -216,14 +222,4 @@ console.log(arrayLike); // { '0': 'Hello', '1': 'World', length: 2 }
 let arr = Array.from(arrayLike);
 console.log(arr); // [ 'Hello', 'World' ]
 ```
-
-| 对象种类   | 特点                                                         | 是否可迭代 |
-| ---------- | ------------------------------------------------------------ | ---------- |
-| 可迭代对象 | 可用`[Symbol.iterator]函数`和`next()`迭代                    | √          |
-| 类数组对象 | 有索引和 `length` 属性                                       | ×          |
-| 数组       | 既可以迭代又可以索引，另外可以`pop()、push()、shift()、unshift()` | √          |
-
-
-
-
 
