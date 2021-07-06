@@ -169,7 +169,7 @@ type系列：
 
 ![](CSS选择器使用汇总/1623635139829-d68c56cd-b2e4-4f02-9943-05779c8bbcae.png)
 
-## >
+## `>`
 
 ![](CSS选择器使用汇总/1623636040449-bd843b1e-22d6-4fab-ad0e-88fc7e7e8a4d.png)
 
@@ -180,37 +180,42 @@ type系列：
 </div>
 ```
 
-## 空格和>的区别
+## 空格和`>`的区别
 
-- `空格`是选所有子代
-- `>`是只选一代
+- `空格`是选所有后代
+- `>`是只选子代
 
 ```html
 <style>
-    div span{
-        color: red;
+    /* 选后代 */
+    .demo div {
+        border:5px solid red; 
     }
-    div>span{
-        color: blue;
+    /* 选子代 */
+    .demo>div { 
+        border:5px solid blue; 
     }
 </style>
-<div>
-    <span>第3个<span>测试</span>子元素</span>
-    <span>第4个子元素</span>
+<div class="demo">
+    <div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
 </div>
 ```
 
 得到结果：
 
-![](CSS选择器使用汇总/1623639436374-291f151d-1a9a-44e2-9826-8484bb195ffa.png)
+![](CSS选择器使用汇总/image-20210706102339175.png)
 
-## ~
+## `~`
 
 选择后面所有兄弟
 
 ![](CSS选择器使用汇总/1623636987184-088fee5a-a706-49bd-aadf-cffd3f367656.png)
 
-## +
+## `+`
 
 ![](CSS选择器使用汇总/1623637005857-8cc8a09b-8694-4ecb-9ee1-84293b8c281d.png)
 

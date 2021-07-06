@@ -69,11 +69,15 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
  [常见前后端交互用法解释](docs/前端/常见前后端交互用法解释.md) 
 
+---
+
  [CSS选择器使用汇总](docs/前端/CSS选择器使用汇总.md) 
 
  [flex布局](docs/前端/flex布局.md) 
 
  [CSS布局实例](docs/前端/CSS布局实例.md) 
+
+ [CSS背景、阴影、动画](docs\前端\CSS背景、阴影、动画.md) 
 
 ## 前端面试之道
 

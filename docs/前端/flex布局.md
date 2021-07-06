@@ -2,13 +2,15 @@
 
 # Flex容器
 
-![img](flex布局/1622165381223-13bf8707-5d62-4d16-8b80-b8b2e2b7b4c1.png)
+![](flex布局/1622165381223-13bf8707-5d62-4d16-8b80-b8b2e2b7b4c1.png)
 
 容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做`main start`，结束位置叫做`main end`；交叉轴的开始位置叫做`cross start`，结束位置叫做`cross end`。
 
 项目默认沿主轴排列。单个项目占据的主轴空间叫做`main size`，占据的交叉轴空间叫做`cross size`。
 
 # 属性列举
+
+> 普通属性是写在盒子的CSS中，而项目属性是写在盒子内部节点的CSS中
 
 - flex-direction：Flex的方向
   - `row`（默认）：主轴为水平方向，起点在左端。
@@ -112,7 +114,7 @@ wrap-reverse：
   - `space-around`：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。
   - `stretch`（默认值）：轴线占满整个交叉轴。
 
-![img](flex布局/1622182501946-ee3ba8a6-0285-4347-bd64-54cb5e588afe.png)
+![](flex布局/1622182501946-ee3ba8a6-0285-4347-bd64-54cb5e588afe.png)
 
 # 项目属性
 
@@ -161,7 +163,7 @@ flex：none | <' flex-grow '> <' flex-shrink >'? || <' flex-basis '>
 
 ## flex-grow和flex-shrink
 
-![](https://cdn.nlark.com/yuque/0/2021/jpeg/1292221/1623659898080-5fa9546b-1d0e-4c8c-a9d9-5abbb67a829c.jpeg)
+![](flex布局/flex.jpeg)
 
 ## flex-basis
 
