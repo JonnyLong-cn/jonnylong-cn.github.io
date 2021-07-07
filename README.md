@@ -63,6 +63,10 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
  [Promise的使用](docs/前端/Promise的使用.md) 
 
+ [DOM的使用](docs/前端/DOM的使用.md) 
+
+ [浏览器事件的使用汇总](docs/前端/浏览器事件的使用汇总.md) 
+
  [React-Router常见标签及使用](docs/前端/React-Router常见标签及使用.md) 
 
  [在React中使用mockjs](docs/前端/在React中使用mockjs.md) 
@@ -77,7 +81,7 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
  [CSS布局实例](docs/前端/CSS布局实例.md) 
 
- [CSS背景、阴影、动画](docs\前端\CSS背景、阴影、动画.md) 
+ [CSS背景、阴影、动画](docs/前端/CSS背景、阴影、动画.md) 
 
 ## 前端面试之道
 
