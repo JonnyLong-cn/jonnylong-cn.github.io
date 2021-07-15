@@ -44,8 +44,7 @@
 
 - `tagName` 属性仅适用于 `Element` 节点。
 - `nodeName`是为任意`Node`定义的：
-
-- - 对于元素，它的意义与 `tagName` 相同。
+  - 对于元素，它的意义与 `tagName` 相同。
   - 对于其他节点类型（text，comment 等），它拥有一个对应节点类型的字符串。
 
 ```js
@@ -181,7 +180,7 @@ div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
 </script>
 ```
 
-## 节点移除
+## 节点移除和克隆
 
 移除：`node.remove()`
 
@@ -190,15 +189,46 @@ div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
 - `elem.cloneNode(true)` ：深克隆，具有所有特性（attribute）和子元素。
 - `elem.cloneNode(false)`：浅克隆，那克隆就不包括子元素。
 
-# 获取类名
+# 样式和类
+
+## 获取类名
 
 - `elem.classList`：获取类名的列表，返回一个对象
-
-- - `elem.classList.add/remove(class)` ：添加/移除类。
+  - `elem.classList.add/remove(class)` ：添加/移除类。
   - `elem.classList.toggle(class)` ：如果类不存在就添加类，存在就移除它。
   - `elem.classList.contains(class)` ：检查给定类，返回 `true/false`。
-
 - `elem.className`：获取类名的集合，返回一个字符串
 
 ![](DOM的使用/1622255463460-fcd61155-87f6-4022-aaea-66dab2274c95.png)
+
+## 样式
+
+`elem.style` 属性是一个对象，它对应于 `"style"` 特性（attribute）中所写的内容。
+
+对于多词（multi-word）属性，使用驼峰式 camelCase：
+
+```bash
+background-color  => elem.style.backgroundColor
+z-index           => elem.style.zIndex
+border-left-width => elem.style.borderLeftWidth
+```
+
+例如：
+
+```html
+<p class="poem">纸上得来终觉浅，绝知此事要躬行</p>
+<input id="btn" type="button" value="按钮"></input>
+<script>
+    poem.style.color = "blue";
+    poem.style.fontFamily = "楷体";
+    poem.style.fontSize = "32px";
+    console.dir(poem);
+</script>
+```
+
+![](DOM的使用/image-20210708204744416.png)
+
+
+
+
 
