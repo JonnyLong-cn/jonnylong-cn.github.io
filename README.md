@@ -83,7 +83,9 @@ CSS Inspriation：https://chokcoco.github.io/CSS-Inspiration/
 
  [CSS-grid布局](docs/前端/技巧使用/CSS-grid布局.md) 
 
- [CSS布局实例](docs/前端/技巧使用/CSS布局实例.md) 
+ [CSS-布局实例](docs/前端/技巧使用/CSS布局实例.md) 
+
+ [CSS-定位详解](docs/前端/技巧使用/CSS-定位详解.md) 
 
  [CSS背景、阴影、动画](docs/前端/技巧使用/CSS背景、阴影、动画.md) 
 
